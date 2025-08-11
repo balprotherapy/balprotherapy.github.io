@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Имя Фамилия — Визитка</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#ffffff;--accent:#2b6cb0}
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,#eef2fb 0%,var(--bg) 100%);
+      color:#111;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .card{
+      width:100%;
+      max-width:720px;
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(20,30,60,0.08);
+      padding:28px;
+      display:grid;
+      grid-template-columns:96px 1fr;
+      gap:18px;
+      align-items:center;
+    }
+    .avatar{
+      width:96px;height:96px;border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),#6aa6e6);
+      display:flex;align-items:center;justify-content:center;
+      color:#fff;font-weight:700;font-size:28px;
+      flex-shrink:0;
+    }
+    h1{margin:0;font-size:20px}
+    .role{margin:6px 0 12px;color:#555}
+    p{margin:0 0 10px;line-height:1.4}
+    .contacts a{display:inline-block;margin:4px 0;color:var(--accent);text-decoration:none}
+    .btn{
+      display:inline-block;margin-top:12px;padding:8px 14px;border-radius:8px;
+      background:var(--accent);color:#fff;text-decoration:none;font-weight:600;
+    }
+    footer{margin-top:18px;text-align:center;color:#888;font-size:13px;width:100%}
+    @media(max-width:520px){
+      .card{grid-template-columns:1fr; text-align:center}
+      .avatar{margin:0 auto}
+    }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <div class="avatar">ИФ</div>
+    <div>
+      <h1>Имя Фамилия</h1>
+      <div class="role">Frontend-разработчик / Визитка</div>
+      <p>Короткое описание — чем занимаешься, какие услуги предлагаешь. 1–2 строки.</p>
+      <div class="contacts">
+        <a href="tel:+79991234567">+7 (999) 123-45-67</a><br>
+        <a href="mailto:email@example.com">email@example.com</a><br>
+        <a href="https://example.com" target="_blank" rel="noopener">example.com</a>
+      </div>
+      <a class="btn" href="https://t.me/yourname" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </article>
+  <footer>© <span id="year"></span> Имя Фамилия</footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
