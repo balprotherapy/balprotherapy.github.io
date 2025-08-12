@@ -1,68 +1,120 @@
-<!doctype html>
-<html lang="pl">
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Wiadomość</title>
-  <style>
-    :root{
-      --bg: #0f1720;
-      --card: #0b1220;
-      --text: #e6eef8;
-      --muted: #9fb0c8;
-      --accent: #7dd3fc;
-      --radius: 14px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071029 0%, #0b1630 100%);color:var(--text)}
-    .wrap{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:32px;
-      box-sizing:border-box;
-    }
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      padding:24px;
-      max-width:780px;
-      width:100%;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-      border: 1px solid rgba(125,211,252,0.06);
-    }
-    h1{margin:0 0 8px 0;font-size:20px;letter-spacing:0.2px}
-    p{margin:10px 0;line-height:1.45;color:var(--muted)}
-    .original{
-      margin-top:16px;
-      padding:14px;
-      background:rgba(125,211,252,0.03);
-      border-radius:10px;
-      color:var(--text);
-      font-size:16px;
-      white-space:pre-wrap;
-      border:1px solid rgba(125,211,252,0.06);
-    }
-    .meta{font-size:13px;color:#89b7d6;margin-top:6px}
-    @media (max-width:520px){
-      .card{padding:18px}
-      h1{font-size:18px}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAL PRO THERAPY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+        }
+        header img {
+            max-width: 300px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .contact, .addresses, .price-list {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact a {
+            display: inline-block;
+            margin: 5px 10px;
+            text-decoration: none;
+            color: #0077b5;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        .note {
+            text-align: center;
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <article class="card" role="article" aria-labelledby="msg-title">
-      <h1 id="msg-title">Szybka wiadomość</h1>
-      <div class="meta">Wersja gotowa do wklejenia — tekst zachowany wiernie.</div>
 
-      <div class="original" aria-label="oryginalna wiadomość">
-Czesc kohanie. Ja royumiem jak ci cienzko bez kintaktu na raze. dawal se przy okayii pogadamy jenak. Teraz trohe zajentu bo robie linka.
-      </div>
+<header>
+    <img src="BAL PRO THERAPY LOGO.png" alt="BAL PRO THERAPY Logo">
+</header>
 
-      <p>Jeśli chcesz, mogę: zmienić język nagłówka, dopasować kolory, albo dodać przycisk kontaktu. Mów krótko — zrobię.</p>
-    </article>
-  </div>
+<div class="contact">
+    <h2>Kontakte</h2>
+    <p>
+        📞 WhatsApp & Telegram: <a href="https://wa.me/4917665679620">+49 176 6567 9620</a><br>
+        📧 Email: <a href="mailto:info@balprotherapy.com">info@balprotherapy.com</a>
+    </p>
+    <p>
+        🌐 <a href="https://www.linkedin.com/in/oleksandr-bal/" target="_blank">LinkedIn</a> |
+        🌐 <a href="https://www.facebook.com/oleksandr.bal.pro/" target="_blank">Facebook</a> |
+        🌐 <a href="https://www.tiktok.com/@balprotherapy" target="_blank">TikTok</a>
+    </p>
+</div>
+
+<div class="addresses">
+    <h2>Adressen</h2>
+    <p>📍 Breite Str. 28-30 / 3. Etage, 50667 Köln</p>
+    <p>📍 Kampstraße 4, 50354 Hürth</p>
+    <p class="note">* Termin nur nach Kontaktaufnahme *</p>
+</div>
+
+<div class="price-list">
+    <h2>Preisliste – Private Massagesitzungen</h2>
+    <table>
+        <tr><th>Massage</th><th>Dauer</th><th>Preis</th></tr>
+        <tr><td>Classic Massage (Rücken und Nacken)</td><td>20 min</td><td>27 €</td></tr>
+        <tr><td>Classic Massage (Rücken und Nacken)</td><td>30 min</td><td>36 €</td></tr>
+        <tr><td>Classic Massage (Teilkörper)</td><td>45 min</td><td>50 €</td></tr>
+        <tr><td>Classic Massage (Ganzkörper)</td><td>60 min</td><td>63 €</td></tr>
+        <tr><td>Classic Massage (Ganzkörper)</td><td>90 min</td><td>86 €</td></tr>
+        <tr><td>Sports Massage</td><td>30 min</td><td>41 €</td></tr>
+        <tr><td>Sports Massage</td><td>45 min</td><td>63 €</td></tr>
+        <tr><td>Sports Massage</td><td>60 min</td><td>77 €</td></tr>
+        <tr><td>Faszienmassage</td><td>30 min</td><td>50 €</td></tr>
+        <tr><td>Faszienmassage</td><td>45 min</td><td>68 €</td></tr>
+        <tr><td>Faszienmassage</td><td>60 min</td><td>86 €</td></tr>
+        <tr><td>Lymphatic Drainage</td><td>30 min</td><td>41 €</td></tr>
+        <tr><td>Lymphatic Drainage</td><td>45 min</td><td>59 €</td></tr>
+        <tr><td>Lymphatic Drainage</td><td>60 min</td><td>72 €</td></tr>
+        <tr><td>Schröpfenmassage</td><td>30 min</td><td>36 €</td></tr>
+        <tr><td>Schröpfenmassage (+Beine)</td><td>45 min</td><td>54 €</td></tr>
+        <tr><td>Anti-Stress Massage</td><td>45 min</td><td>54 €</td></tr>
+        <tr><td>Fußmassage</td><td>20 min</td><td>27 €</td></tr>
+        <tr><td>Fußmassage</td><td>30 min</td><td>35 €</td></tr>
+        <tr><td>Kopf & Gesichtsmassage</td><td>20 min</td><td>32 €</td></tr>
+        <tr><td>Kopf & Gesichtsmassage</td><td>30 min</td><td>41 €</td></tr>
+        <tr><td>Kiefermassage</td><td>20 min</td><td>36 €</td></tr>
+    </table>
+</div>
+
 </body>
 </html>
